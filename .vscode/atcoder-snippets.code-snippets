@@ -1,0 +1,33 @@
+{
+	"Input": {
+		"prefix": "ci",
+		"body": [
+			"cin >> ${1:n};"
+		]
+	},
+	"Output": {
+		"prefix": "co",
+		"body": [
+			"cout << ${1:ans} << '\\n';"
+		]
+	},
+	"YesOrNo": {
+		"prefix": "yn",
+		"body": [
+			"if (yes) cout << \"Yes\" << '\\n';",
+			"else cout << \"No\" << '\\n';"
+		]
+	},
+	"Vector": {
+		"prefix": "vec",
+		"body": [
+			"vector<${1:int}> ${2:v}(${3:n});"
+		]
+	},
+	"Vector2D": {
+		"prefix": "v2d",
+		"body": [
+			"vector ${1:v}(${2:n}, vector<${3:int}>(${4:m}));"
+		]
+	},
+}

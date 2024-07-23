@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "g++ Build",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-std=gnu++20",
+				"-fdiagnostics-color=always",
+				"-g",
+				"-Wall",
+				"-Wextra",
+				"-I",
+				"${workspaceFolder}/ac-library",
+				"-o",
+				"${workspaceFolder}/out",
+				"${file}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"group": "build",
+			"detail": "コンパイラ: /usr/bin/g++"
+		}
+	]
+}
